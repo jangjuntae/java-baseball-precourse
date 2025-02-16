@@ -14,24 +14,28 @@ public class CompareController {
         int ball;
 
         while (strike != 3) {
+            System.out.print("숫자를 입력해주세요 : ");
             ArrayList<Integer> arr = new ArrayList<>();
-            String num = InputModel.InputModel();
+            String numStr = InputModel.InputModel();
+            int num = Integer.parseInt(numStr);
             strike = 0;
             ball = 0;
 
-            for (int i = 0; i < num.length(); i++) {
-                arr.add(num.charAt(i) - '0');
-            }
+            arr.add(num / 100);
+            num %= 100;
+            arr.add(num / 10);
+            num %= 10;
+            arr.add(num);
 
             for (int i = 0; i < 3; i++) {
                 if (arr.get(i).equals(numArr.get(i))) {
                     strike++;
                 }
-                if (arr.contains(numArr.get(i))) {
+                else if (arr.contains(numArr.get(i))) {
                     ball++;
                 }
             }
-            viewcontroller(strike, ball);
+            strike = viewcontroller(strike, ball);
         }
     }
 

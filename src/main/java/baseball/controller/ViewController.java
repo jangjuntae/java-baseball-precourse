@@ -1,4 +1,5 @@
 package baseball.controller;
+
 import camp.nextstep.edu.missionutils.Console;
 
 public class ViewController {
@@ -24,4 +25,5 @@ public class ViewController {
         }
         return strike;
     }
+
 }
