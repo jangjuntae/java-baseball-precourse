@@ -2,7 +2,7 @@ package baseball.controller;
 import camp.nextstep.edu.missionutils.Console;
 
 public class ViewController {
-    public static int viewcontroller(int strike, int ball) {
+    public static int ViewController(int strike, int ball) {
         if(strike == 0 && ball == 0){
             System.out.println("낫싱");
         }

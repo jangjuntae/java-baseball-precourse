@@ -5,7 +5,7 @@ import baseball.model.InputModel;
 
 import java.util.ArrayList;
 
-import static baseball.controller.ViewController.viewcontroller;
+import static baseball.controller.ViewController.ViewController;
 
 public class CompareController {
     public static void comparecontroller() {
@@ -31,7 +31,7 @@ public class CompareController {
                     ball++;
                 }
             }
-            viewcontroller(strike, ball);
+            ViewController(strike, ball);
         }
     }
 
