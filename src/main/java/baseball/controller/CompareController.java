@@ -16,7 +16,7 @@ public class CompareController {
         while (strike != 3) {
             System.out.print("숫자를 입력해주세요 : ");
             ArrayList<Integer> arr = new ArrayList<>();
-            String numStr = InputModel.InputModel();
+            String numStr = InputModel.inputmodel();
             int num = Integer.parseInt(numStr);
             strike = 0;
             ball = 0;
